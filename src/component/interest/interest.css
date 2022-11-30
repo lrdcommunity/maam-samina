@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+/* UTILITIES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.interest {
+  font-family: "Mulish", sans-serif;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.interest .interCard {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 16px;
+  margin: 10px 0px;
+  gap: 10px;
+  width: 32%;
+  height: 59px;
+  border: 1px solid #8e1d0e;
+}
+.interest .interCard p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #444444;
+}
+@media screen and (max-width: 769px) {
+  .interest .interCard {
+    width: 49%;
+  }
+  .interest .interCard p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .interest .interCard {
+    width: 100%;
+  }
+}

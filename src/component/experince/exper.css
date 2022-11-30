@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+/* UTILITIES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.exper {
+  width: 100%;
+  background: rgba(248, 230, 255, 0.33);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 0px;
+  font-family: "Mulish", sans-serif;
+}
+.exper .exper-contact {
+  width: 70%;
+  margin: 0% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.exper .exper-contact h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  color: #444444;
+  text-align: center;
+}
+.exper .exper-contact p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #444444;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+
+@media screen and (max-width: 769px) {
+    .exper .exper-contact {
+        width: 85%;
+      }
+      .exper .exper-contact h2 {
+        font-size: 22px;
+      }
+      .exper .exper-contact p {
+        font-size: 14px;
+        text-align: justify;
+      }
+}
+@media screen and (max-width: 426px) {
+    .exper .exper-contact{
+        width: 90%;
+    }
+}
+.exper .cards {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.exper .cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px;
+  gap: 16px;
+  width: 237px;
+  padding: 0px 16px;
+  height: 100px;
+  position: relative;
+}
+.exper .cards .card img {
+  position: absolute;
+  left: 0;
+}
+.exper .cards .card span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #8e1d0e;
+}
+.exper .cards .card p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #8e1d0e;
+}
+
+@media screen and (max-width: 769px) {
+    .exper .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    .exper .cards .card {
+        width: 90%;
+        margin: 20px auto;
+      }
+      .exper .cards .card img {
+        position: absolute;
+        left: 0;
+      }
+      .exper .cards .card span {
+        font-size: 14px;
+      }
+      .exper .cards .card p {
+        font-size: 14px;
+      }
+}
+@media screen and (max-width: 426px) {
+    .exper .cards {
+        width: 90%;
+    }
+}

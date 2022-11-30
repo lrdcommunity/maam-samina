@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+/* UTILITIES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.footer {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 80px 64px;
+  gap: 80px;
+  background: #c1a8ca;
+}
+.footer .footer-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer-top ul {
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+}
+.footer .footer-top ul li {
+  margin-right: 32px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+.footer .footer-top .icons {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footer .footer-top .icons a img {
+  margin-left: 15px;
+  transition: .7s;
+}
+.footer .footer-top .icons a img:hover {
+  box-shadow: 1px black;
+}
+.footer .footer-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(40, 41, 56, 0.55);
+  padding-top: 32px;
+}
+.footer .footer-bottom p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+}
+.footer .footer-bottom a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+  margin-left: 24px;
+  transition: .7s;
+}
+.footer .footer-bottom a:hover {
+  color: brown;
+}
+@media screen and (max-width: 769px) {
+  .footer .footer-top ul li {
+    margin-right: 16px;
+    font-size: 14px;
+  }
+  .footer .footer-bottom p {
+    font-size: 12px;
+  }
+  .footer .footer-bottom a {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .footer {
+    padding: 40px 23px;
+    gap: 40px;
+  }
+  .footer .footer-top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .footer .footer-top ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .footer .footer-top ul li {
+    margin-right: 10px;
+    font-size: 12px;
+  }
+  .footer .footer-top .icons {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .footer .footer-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer .footer-bottom p{
+    margin-bottom: 10px;  
+    font-size: 10px;
+  }
+  .footer .footer-bottom a{
+    font-size: 10px;
+  }
+}

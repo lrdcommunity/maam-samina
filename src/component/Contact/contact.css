@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+/* UTILITIES */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 30px auto;
+  gap: 30px;
+  font-family: "Mulish", sans-serif;
+}
+.contact-box .contact-title h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  color: #444444;
+}
+.contact-box form .row{
+    width: 100%;
+    display: flex;
+    margin-bottom: 24px;
+}
+.contact-box form .first {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+}
+.contact-box form .first textarea {
+  width: 100%;
+  background: #ffffff;
+  height: 180px;
+  border: 1px solid #8e1d0e;
+  border-radius: 6px;
+  resize: none;
+  padding: 12px;
+  outline: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+.contact-box form {
+  width: 90%;
+  margin: 0% auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-box form .first input,
+.contact-box form .last input {
+  width: 100%;
+  background: #ffffff;
+  height: 48px;
+  border: 1px solid #8e1d0e;
+  border-radius: 6px;
+  outline: none;
+}
+:is(.contact-box form .first, .contact-box form .last) label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #282938;
+}
+.contact-box form .last {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 24px;
+  gap: 8px;
+}
+.contact-box form button {
+  padding: 14px 32px;
+  border: 1px solid #8e1d0e;
+  color: #ffffff;
+  background: #8e1d0e;
+  border-radius: 6px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  transition: 0.7s;
+}
+.contact-box form button:hover {
+  color: #8e1d0e;
+  background: #ffffff;
+}
+@media screen and (max-width: 769px) {
+    .contact-box form .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-box form .last {
+        margin-left: 0px;
+        margin-top: 24px;
+    }
+    .contact-box .contact-title h2 {
+      font-size: 22px;
+    }
+    :is(.contact-box form .first, .contact-box form .last) label {
+      font-size: 14px;
+    }
+    .contact-box form button {
+      font-size: 15px;
+    }
+    .contact-box form .first textarea {
+      font-size: 14px;
+    }
+}
+@media screen and (max-width: 426px) {
+    .contact-box {
+        width: 90%;
+    }
+    .contact-box form{
+        width: 100%;
+    }
+}

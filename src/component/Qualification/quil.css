@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+/* UTILITIES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.qual-cards {
+  font-family: "Mulish", sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+.qual-cards .qual-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px 20px;
+  gap: 10px;
+  width: 47%;
+  background: #fdf7ff;
+  border: 1px solid #8e1d0e;
+}
+.qual-cards .qual-card .content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+}
+.qual-cards .qual-card .content p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #8e1d0e;
+}
+.qual-cards .qual-card .content span {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: #8e1d0e;
+}
+.qual-cards .qual-card .image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.qual-cards .qual-card .image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 769px) {
+    .qual-cards {
+        display: flex;
+        flex-direction: column;
+      }
+      .qual-cards .qual-card {
+        width: 100%;
+        margin: 5px 0px;
+      }
+      .qual-cards .qual-card .content p {
+        font-size: 14px;
+      }
+      .qual-cards .qual-card .content span {
+        font-size: 12px;
+      }
+}
